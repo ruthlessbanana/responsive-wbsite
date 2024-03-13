@@ -391,11 +391,13 @@ img {
   border-radius: .25rem;
   font-size: var(--normal-font-size);
   transition: .3s;
+  opacity: .25;
 }
 
 .button:hover{
   transition: .3s;
   transform: translateY(-.25rem);
+  opacity: 1;
 }
 
 /*=============== CYBER BUTTON ===============*/
@@ -459,7 +461,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsla(310, 98%, 43%, 0.096);
+  background-color: #d902b5;
   backdrop-filter: blur(50px);
   filter: drop-shadow(-2px 3px #ffffff) drop-shadow(-1px -3px #ffffff) drop-shadow(2px 1px #ffffff);
 }
@@ -698,6 +700,8 @@ img {
 }
 
 .popular__price{
+  color: transparent;
+  text-shadow: 0 2px 8px #ffffff;
   font-size: var(--h3-font-size);
 }
 
@@ -755,8 +759,8 @@ img {
 }
 
 .features__card{
-  width: 112px;
-  background-color: hsla(0, 0%, 100%, .1);
+  width: 130px;
+  background-color: hsla(0, 0%, 100%, 0.027);
   backdrop-filter: blur(16px);
   border-radius: 1.25rem;
   padding: .75rem 2rem;
@@ -790,16 +794,20 @@ img {
 }
 
 .features__map{
+  opacity: .5;
   max-width: initial;
   width: 450px;
   position: absolute;
-  /*top: 8rem;*/
-  /*left: -3rem;*/
+  top: 8rem;
+  left: -3rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d902b5;
   margin: auto;
   object-fit: fill;
-  /*transform: rotate(-22deg);*/
-  opacity: .1;
-  object-fit: fill;
+  border-radius: .50rem;
+  transform: rotate(90deg);
+  z-index: -1;
 }
 
 /*=============== FEATURED ===============*/
@@ -841,7 +849,7 @@ img {
 }
 
 .featured__item:hover{
-  background-color: var(--first-color);
+  opacity: 1;
 }
 
 .featured__item:hover span,
@@ -889,6 +897,7 @@ img {
   width: 180px;
   margin: 1.5rem 0;
   transition: .3s;
+  opacity: .25;
 }
 
 .featured__price{
@@ -896,6 +905,7 @@ img {
 }
 
 .featured__button{
+  opacity: .25;
   border: none;
   outline: none;
   padding: .75rem 1rem;
@@ -912,13 +922,14 @@ img {
 
 .featured__card:hover .featured__img{
   transform:translateX(-.25rem);
+  opacity: .5;
 }
 
 
 
 /* Active link featured */
 .active-featured{
-  background-color: var(--first-color);
+  background-color: none;
 }
 
 .active-featured span,
@@ -944,6 +955,7 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  opacity: .25;
 }
 
 .offer__data,
@@ -1049,8 +1061,10 @@ img {
 }
 
 .footer__link:hover,
-.footer__social-link:hover{
+.footer__social-link:hover,
+.footer__social-link:visited{
   color: var(--title-color);
+  opacity: 1;
 }
 
 .footer__social{
@@ -1060,6 +1074,7 @@ img {
 
 .footer__social-link{
   font-size: 1.25rem;
+  opacity: .5;
 }
 
 .footer__copy{
