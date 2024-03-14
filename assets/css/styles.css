@@ -230,7 +230,7 @@ img {
 .scroll-header{
   border-radius: 0 0 1rem 1rem;
   background-color: hsla(0, 0%, 100%, 0.027);
-  backdrop-filter: blur(50px);
+  /*backdrop-filter: blur(50px);*/
   /*box-shadow: 0 2px 4px hsla(0, 0%, 1%, 1);*/
 }
 
